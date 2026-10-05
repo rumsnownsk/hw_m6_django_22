@@ -41,11 +41,11 @@ class Product(models.Model):
         verbose_name_plural = 'Продукты'
         ordering = ['price', 'name']
 
-class User(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Имя', help_text='Введите имя Пользователя',
-                            db_index=True)
-    photo = models.ImageField(upload_to='catalog/photo/users', blank=True, null=True, verbose_name='Фотография', help_text='Загрузите фото')
-
-    phone = models.CharField(max_length=12, verbose_name='Телефон', help_text='Введите номер телефона',db_index=True)
-    country = models.CharField(max_length=255, verbose_name='Страна', help_text='Введите название страны',db_index=True)
-    address = models.CharField(max_length=255, verbose_name='Адрес', help_text='Введите Адрес',db_index=True)
+# class User(models.Model):
+#     name = models.CharField(max_length=50, verbose_name='Имя', help_text='Введите имя Пользователя',
+#                             db_index=True)
+#     photo = models.ImageField(upload_to='catalog/photo/users', blank=True, null=True, verbose_name='Фотография', help_text='Загрузите фото')
+#
+#     phone = models.CharField(max_length=12, verbose_name='Телефон', help_text='Введите номер телефона',db_index=True)
+#     country = models.CharField(max_length=255, verbose_name='Страна', help_text='Введите название страны',db_index=True)
+#     address = models.CharField(max_length=255, verbose_name='Адрес', help_text='Введите Адрес',db_index=True)

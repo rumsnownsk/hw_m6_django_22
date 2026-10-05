@@ -36,16 +36,25 @@
     }
   },
   {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+      "name": "Стройматериалы",
+      "slug": "",
+      "description": "Они нужны чтобы строить будущее"
+    }
+  },
+  {
     "model": "catalog.product",
     "pk": 1,
     "fields": {
       "name": "Лук",
       "description": "Едрёный лук Огонь",
-      "photo": "",
+      "photo": "catalog/photo/products/лук.jpg",
       "category": 1,
       "price": "814.00",
       "created_at": "2026-10-04T11:09:47.287Z",
-      "updated_at": "2026-10-04T11:13:36.307Z"
+      "updated_at": "2026-10-05T05:39:05.086Z"
     }
   },
   {
@@ -93,11 +102,11 @@
     "fields": {
       "name": "Редиска",
       "description": "Очень сладкая",
-      "photo": "",
+      "photo": "catalog/photo/products/редиска.jpeg",
       "category": null,
       "price": "0.00",
       "created_at": "2026-10-04T11:45:50.905Z",
-      "updated_at": "2026-10-04T11:45:50.905Z"
+      "updated_at": "2026-10-05T05:35:20.075Z"
     }
   },
   {
@@ -119,11 +128,50 @@
     "fields": {
       "name": "Яблоки",
       "description": "Спелые сочные круглые",
-      "photo": "",
+      "photo": "catalog/photo/products/яблоко.jpg",
       "category": 3,
       "price": "55.55",
       "created_at": "2026-10-04T12:16:49.203Z",
-      "updated_at": "2026-10-04T12:16:49.203Z"
+      "updated_at": "2026-10-05T05:23:32.761Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "Кирпич",
+      "description": "красный прямоугольный с дырками",
+      "photo": "",
+      "category": 5,
+      "price": "0.00",
+      "created_at": "2026-10-05T03:50:07.573Z",
+      "updated_at": "2026-10-05T03:50:07.573Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "Труба",
+      "description": "Дымовая длинная нержавеющая",
+      "photo": "",
+      "category": 5,
+      "price": "0.00",
+      "created_at": "2026-10-05T03:50:07.578Z",
+      "updated_at": "2026-10-05T03:50:07.578Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "Ламинат",
+      "description": "Водостойкий крепкий надёжный",
+      "photo": "",
+      "category": 5,
+      "price": "0.00",
+      "created_at": "2026-10-05T03:50:07.583Z",
+      "updated_at": "2026-10-05T03:50:07.583Z"
     }
   }
 ]
