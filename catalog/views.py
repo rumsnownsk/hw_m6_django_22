@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from catalog.models import Product
+
+
 def contacts(request):
     if request.method == "POST":
         name = request.POST.get('name')
@@ -10,5 +13,11 @@ def contacts(request):
 
     return render(request, 'contacts.html')
 
+
 def home(request):
-    return render(request, 'home.html')
+    last_five_products = Product.objects.order_by('-created_at', '-id')[:5]
+    for p in last_five_products:
+        print(p)
+    return render(request, 'home.html', {
+        'last_five_products': last_five_products
+    })
