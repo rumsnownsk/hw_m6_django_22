@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hw-m6-django-22"
+name = "hw-m6-django"
 version = "0.1.0"
 description = ""
 authors = ["rum <rum@example.com>"]
