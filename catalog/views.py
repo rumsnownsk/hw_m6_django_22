@@ -4,6 +4,10 @@ from django.shortcuts import render
 from catalog.models import Product
 
 
+def base(request):
+    return render(request, 'base.html')
+
+
 def contacts(request):
     if request.method == "POST":
         name = request.POST.get('name')
@@ -21,3 +25,5 @@ def home(request):
     return render(request, 'home.html', {
         'last_five_products': last_five_products
     })
+
+
